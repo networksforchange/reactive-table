@@ -59,7 +59,7 @@
                 {{else}}
                   {{#if isSortable}}
                     <th class="{{getHeaderClass}} sortable" fieldid="{{getFieldFieldId}}">
-                        {{#if labelIsTemplate}}{{#with labelData}}{{> ../label}}{{else}}{{> label}}{{/with}}{{else}}{{getLabel}}{{/if}}
+                        {{#if labelIsTemplate}}{{#with labelData}}{{> ../label}}{{else}}{{> label}}{{/with}}{{else}}{{getLabel}}{{/if}}&nbsp;&nbsp;
                         {{#if ../useFontAwesome}}
                             <i class="fa fa-sort" style="color: #c9c9c9;"></i>
                         {{/if}}
