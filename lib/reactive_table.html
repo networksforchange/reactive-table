@@ -40,7 +40,7 @@
             {{#each fields}}
               {{#if isVisible}}
                 {{#if isPrimarySortField}}
-                  <th class="{{#if isSortable}}sortable {{/if}}{{getHeaderClass}}" fieldid="{{getFieldFieldId}}">
+                  <th class="{{#if isSortable}}sortable {{/if}}{{getHeaderClass}}" fieldid="{{getFieldFieldId}}" title="{{getTitle}}">
                     {{#if labelIsTemplate}}{{#with labelData}}{{> ../label}}{{else}}{{> label}}{{/with}}{{else}}{{getLabel}}{{/if}}&nbsp;&nbsp;
                     {{#if isAscending}}
                       {{#if ../useFontAwesome}}
@@ -58,14 +58,14 @@
                   </th>
                 {{else}}
                   {{#if isSortable}}
-                    <th class="{{getHeaderClass}} sortable" fieldid="{{getFieldFieldId}}">
+                    <th class="{{getHeaderClass}} sortable" fieldid="{{getFieldFieldId}}" title="{{getTitle}}">
                         {{#if labelIsTemplate}}{{#with labelData}}{{> ../label}}{{else}}{{> label}}{{/with}}{{else}}{{getLabel}}{{/if}}&nbsp;&nbsp;
                         {{#if ../useFontAwesome}}
                             <i class="fa fa-sort" style="color: #c9c9c9;"></i>
                         {{/if}}
                     </th>
                   {{else}}
-                    <th class="{{getHeaderClass}}" fieldid="{{getFieldFieldId}}">{{#if labelIsTemplate}}{{#with labelData}}{{> ../label}}{{else}}{{> label}}{{/with}}{{else}}{{getLabel}}{{/if}}</th>
+                    <th class="{{getHeaderClass}}" fieldid="{{getFieldFieldId}}" title="{{getTitle}}">{{#if labelIsTemplate}}{{#with labelData}}{{> ../label}}{{else}}{{> label}}{{/with}}{{else}}{{getLabel}}{{/if}}</th>
                   {{/if}}
                 {{/if}}
               {{/if}}
