@@ -5,7 +5,7 @@
         <i class="fa fa-filter"></i>
       {{else}}
         {{#if label}}
-          <span>{{label}}</span>
+          <span {{#if title}}title="{{title}}"{{/if}}>{{label}}</span>
         {{else}}
           {{i18n 'reactiveTable.filter'}}
         {{/if}}
