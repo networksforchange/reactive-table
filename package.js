@@ -1,6 +1,6 @@
 Package.describe({
   summary: "A reactive table designed for Meteor",
-  version: "0.8.5",
+  version: "0.8.491",
   name: "networksforchange:reactive-table",
   git: "https://github.com/networksforchange/reactive-table.git"
 });
